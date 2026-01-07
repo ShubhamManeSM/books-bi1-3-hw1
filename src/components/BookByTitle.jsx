@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 
 const BookByTitle = ({title}) => {
-  const {data, loading} = useFetch(`https://books-api-six-ruddy.vercel.app/books/${title}`)
+  const {data, loading} = useFetch(`https://books-api-six-ruddy.vercel.app/books/title/${title}`)
 
   // console.log(data)
 
