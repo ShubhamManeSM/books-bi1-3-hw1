@@ -3,13 +3,13 @@ import useFetch from "../useFetch";
 
 const Books = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const {data , loading} = useFetch("http://localhost:3001/books")
+  const {data , loading} = useFetch("https://books-api-six-ruddy.vercel.app/books")
 
   // console.log(data)
 
   const handleDelete = async (bookId) => {
     try {
-      const response = await fetch(`http://localhost:3001/books/${bookId}`, {
+      const response = await fetch(`https://books-api-six-ruddy.vercel.app/books/${bookId}`, {
         method: "DELETE",
       });
 

@@ -24,7 +24,7 @@ const AddBookForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/books", 
+      const response = await fetch("https://books-api-six-ruddy.vercel.app/books", 
         {
         method: "POST",
         headers: {
