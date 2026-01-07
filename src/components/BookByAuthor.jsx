@@ -5,14 +5,14 @@ const BookByAuthor = ({ author }) => {
     `https://books-api-six-ruddy.vercel.app/books/author/${author}`
   );
 
-  console.log(data);
+  // console.log(data);
 
   return (
     data ? (
       <div>
         <h2>Books by {author}</h2>
         <ul>
-          {data.map(book => (
+          {data?.map(book => (
             <li key={book._id}>{book.title}</li>
           ))}
         </ul>

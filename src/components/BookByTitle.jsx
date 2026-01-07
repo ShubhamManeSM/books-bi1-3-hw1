@@ -3,8 +3,7 @@ import useFetch from "../useFetch";
 const BookByTitle = ({title}) => {
   const {data, loading} = useFetch(`https://books-api-six-ruddy.vercel.app/books/${title}`)
 
-  console.log(data)
-  console.log(title)
+  // console.log(data)
 
   return(
     data ? <div>
