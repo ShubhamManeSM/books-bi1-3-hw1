@@ -32,8 +32,9 @@ const Books = () => {
       {loading && <p>Loading...</p>}
       {data?.error && <p>{data?.error}</p>}
       <ul>
-        {data?.map(book => (
-          <li key={book._id}>{book.title}{" "}
+        {data?.map((book) => (
+          <li key={book._id}>
+            {book.title}{" "}
           <button onClick={() => handleDelete(book._id)}>Delete</button>
           </li>
         ))}
