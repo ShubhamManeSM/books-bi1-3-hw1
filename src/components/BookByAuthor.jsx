@@ -12,7 +12,7 @@ const BookByAuthor = ({ author }) => {
       <div>
         <h2>Books by {author}</h2>
         <ul>
-          {data?.map(book => (
+          {data.map(book => (
             <li key={book._id}>{book.title}</li>
           ))}
         </ul>
