@@ -29,7 +29,6 @@ const Books = () => {
 
   return(
     <div>
-      <h2>All Books</h2>
       {loading && <p>Loading...</p>}
       {data?.error && <p>{data?.error}</p>}
       <ul>

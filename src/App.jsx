@@ -10,7 +10,7 @@ function App() {
       <AddBookForm />
       <Books />
       <BookByTitle title={"Shoe Dog"} />
-      <BookByAuthor author={"Robert Kiyosaki"} />
+      <BookByAuthor author={""} />
     </main>
   )
 }
